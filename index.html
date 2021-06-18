@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            max-width: 1920px;
+            margin: 0 auto;
+            overflow: hidden;
+            background: lightgray;
+        }
+
+        .main2 {
+            max-width: 1700px;
+            max-height: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+            background: rgb(192, 191, 191);
+        }
+
+        .content {
+            float: left;
+            width: 100%;
+            margin-right: -210px;
+        }
+
+        .content-inner {
+            margin-right: 210px;
+        }
+
+        .sidebar {
+            background: red;
+            float: right;
+            width: 200px;
+        }
+
+        .menu {
+            width: 100%;
+            background: #222222;
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu ul li a {
+            display: block;
+            padding: 20px;
+            color: red;
+        }
+
+        .footer {
+            width: 100%;
+            background: yellow;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 700px) {
+
+            .sidebar,
+            .content-inner,
+            .content {
+                float: none;
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+
+        .dropdown {
+            -webkit-box-shadow: 2px 6px 21px -2px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 2px 6px 21px -2px rgba(0, 0, 0, 0.75);
+            box-shadow: 2px 6px 21px -2px rgba(0, 0, 0, 0.75);
+        }
+    </style>
+
+
+    <title>Portal de Filmes</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body style="background-color: #060607;">
+
+    <div class="main" id="main">
+        <div class="menu">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2">
+                    <ul>
+                        <li><a href="#"><img src="imagens/logo.png" class="img-rounded" alt="Cinque Terre"></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul>
+                        <li><a href="#">
+                                <h4>Lançamentos</h4>
+                            </a></li>
+                        <li><a href="#destaque">
+                                <h4>Em destaque</h4>
+                            </a></li>
+                        <li><a href="#avaliacoes">
+                                <h4>Avaliações</h4>
+                            </a></li>
+                        <li><a href="#entrevistas">
+                                <h4>Entrevistas & Making of</h4>
+                            </a></li>
+                        <li><a href="#novidades">
+                                <h4>Novidades </h4>
+                            </a></li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-2" style="padding-top: 1%;">
+                    <div class="input-group rounded">
+                        <div class="search">
+                            <h4>
+                                <script src="https://kit.fontawesome.com/c8e4d183c2.js"
+                                    crossorigin="anonymous"></script>
+                                <input type="text" placeholder="Pesquisar filme" />
+                                <i class="fas fa-search" style="color:red"></i>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <center>
+            <h1><b>Lançamentos</b></h1>
+        </center>
+        <br>
+        <br>
+
+        <div class="content" style="background-color:#e2e0e0;">
+            <div class="content-inner">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5" style="padding-top: 1%;"><iframe width="560" height="470"
+                            src="https://www.youtube.com/embed/Zd7T8Gw1-jg" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <h2><b>Power</h2></b>
+                        <div>
+                            <h4><b>Sinopse: </b></h4>
+                            <p>Power, é ambientando em uma Nova Orleans de um futuro próximo, quando um misterioso
+                                “empresário” chamado Biggie oferece uma droga experimental que confere poderes
+                                aleatórios — essa manifestação supostamente acontece de acordo com o DNA de cada pessoa.
+                            </p>
+
+                            <br>
+                            <br>
+                            <h4><b>Diretor: </b> <b style="color:#636060;"> Ariel Shulman e Henry Joost &nbsp; &nbsp;
+                                    &nbsp; </b><b>Roteiro:</b> <b style="color:#636060;">Mattson Tomlin </b> &nbsp;
+                                &nbsp; &nbsp; <b>Estreia:</b> <b style="color:#636060;">2020</b></h4> <br>
+                            <h4><b>Elenco:</b>
+                                <br>
+                                <br>
+                                <b style="color:#636060;">Jamie Foxx &nbsp; | &nbsp; Joseph Gordon-Levitt &nbsp; |
+                                    &nbsp; Dominique Fishback &nbsp; | &nbsp; Rodrigo Santoro </b>
+                                <br>
+                                <br>
+
+                                <h4><b>Avaliação: </b> </h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <center>
+                    <h1><b>. </b>. . .</h1>
+                </center>
+                <br>
+            </div>
+            <br>
+            <br>
+
+            <div class="row" id="destaque">
+                <div class="col-sm-6">
+                    <h1 style="padding-left: 34%; "><b>Em destaque</b></h1>
+                    <br>
+                </div>
+                <div class="col-sm-6"">
+      <ul class=" nav nav-pills" style="padding-left: 38%; padding-top: 2%;">
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" style="border-style: solid; border-color: black;"
+                            data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <b>Categoria TODOS</b> <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" style="padding-left: 5%;">
+                            <li>Aventura</li>
+                            <li>Romance</li>
+                            <li>Comédia</li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <section class="row card_area" id="lista_filmes" style="margin-left: 120px; margin-right: 200px;">
+            </section>
+            <div class="row" id="avaliacoes">
+                <div class="col-sm-12">
+                    <h1 style="padding-left: 17%;"><b>Últimas avaliações</b></h1>
+                </div>
+            </div><br>
+
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <h1><i class="fas fa-user-circle"></i></h1>
+                        </div>
+                        <div class="col-sm-10">
+                            <h2><b>Gabriel Henrique</b></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-2">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <h1><i class="fas fa-user-circle"></i></h1>
+                        </div>
+                        <div class="col-sm-10">
+                            <h2><b>Lucas Almeida</b></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-2">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <h1><i class="fas fa-user-circle"></i></h1>
+                        </div>
+                        <div class="col-sm-10">
+                            <h2><b>Maria Gabriela</b></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-2">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4><b>Avaliação:</b></h4>
+                            Simplesmente fantástico, encontrei todos os filmes que gostaria!! Nota 1000.
+                            <br>
+                            <br>
+                            <h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"> &nbsp; 04/10/2020</span>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-2">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4><b>Avaliação:</b></h4>
+                            Site bacana, dinâmico e sem vírus.
+                            <br>
+                            <br>
+                            <h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"> &nbsp; 17/11/2020</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-2">
+                    <div class="col-sm-12">
+                        <h4><b>Avaliação:</b></h4>
+                        Achei super fácil de mecher, poderia ter os filmes que ainda estão no cinema kkkk. Adorei!
+                        <br>
+                        <br>
+                        <h4>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"> &nbsp; 22/08/2020</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-8">
+
+                </div>
+                <div class="col-sm-3">
+                    <b style="padding-left: 8%;"><button type="button" class="btn btn-secondary"
+                            style="background-color: white; color: black;"><i class="fas fa-plus"></i> Carregar mais
+                            avaliações</button></b>
+                </div><br> <br>
+
+            </div>
+            <br>
+            <div class="main2" style="background-color: #b5b3b4;">
+                <div class="row" id="entrevistas">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <h1><b>Entrevistas & Making of</b></h1>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-1">
+                    </div>
+                    <div class="col-sm-3">
+                        <iframe width="320" height="220" src="https://www.youtube.com/embed/0HEvyxNJRks"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <br>
+                    </div>
+                    <div class="col-sm-3">
+                        <iframe width="320" height="220" src="https://www.youtube.com/embed/-4zVqbFoJoA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <br>
+                    </div>
+                    <div class="col-sm-3">
+                        <iframe width="320" height="220" src="https://www.youtube.com/embed/AKGCAtQE34Y"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-1">
+                    </div>
+                    <div class="col-sm-3">
+                        <h2><b>Filme:</b> Aquaman</h2>
+                        <h4><b>Diretor:</b> James Wan</h4>
+                        <h4><b>Roteiro:</b> David Leslie Jhonson, Will Beall.</h4>
+                        <h4><b>Estreia:</b> 2019</h4>
+                    </div>
+                    <div class="col-sm-3">
+                        <h2><b>Filme:</b> IT a coisa 2</h2>
+                        <h4><b>Diretor:</b> Andy Muschietti</h4>
+                        <h4><b>Roteiro:</b> Gary Dauberman</h4>
+                        <h4><b>Estreia:</b> 2020</h4>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <h2><b>Filme:</b>Sergio</h2>
+                        <h4><b>Diretor:</b> Greg Barker</h4>
+                        <h4><b>Roteiro:</b> Craig Borten</h4>
+                        <h4><b>Estreia:</b> 2020</h4>
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-8">
+
+                    </div>
+                    <div class="col-sm-4">
+                        <b style="padding-left: 15%;"><button type="button" class="btn btn-secondary"
+                                style="background-color: white; color: black;"><i class="fas fa-plus"></i> Carregar mais
+                                filmes</button></b>
+                    </div><br> <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row" id="novidades">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-6">
+                    <h1><b>Novidades</b></h1>
+                    <br>
+                </div>
+                <div class="col-sm-2">
+                    <h1 style="padding-top: 3%;"><b>Sobre</b></h1>
+                    <br>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2">
+                    <img class="img-responsive" src="imagens/Corra.jpg" width="130" height="800" alt="Chania">
+                    <br>
+
+
+                </div>
+                <div class="col-sm-4">
+                    <h4><b>Corra</b></h4>
+                    Um jovem fotógrafo descobre um segredo sombrio quando conhece os pais aparentemente amigáveis da sua
+                    namorada.
+                    <br>
+                    <br>
+                    <b><button type="button" class="btn btn-secondary"
+                            style="background-color: #262525; color: rgb(252, 185, 2);"></i>Hollywood</button></b>
+                    <b><button type="button" class="btn btn-secondary"
+                            style="background-color: #262525; color: rgb(252, 185, 2);"></i>Oscar</button></b>
+                    <b><button type="button" class="btn btn-secondary"
+                            style="background-color: #262525; color: rgb(252, 185, 2);"></i>Melhor Filme</button></b>
+
+                    <p style=" border-bottom: 1px solid #000000;">
+                        _______________________________________________________________________________ </p>
+                </div>
+
+                <div class="col-sm-2">
+                    O site filmes street foi desenvolvido com o propósito de disponibilizar filmes com alta qualidade de
+                    vídeo e segurança contra vírus para os usuários, já que não aceitamos propostas de divulgação.
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2">
+                    <img class="img-responsive" src="imagens/Resgate.jpg" width="130" height="800" alt="Chania">
+                    <br>
+
+
+                </div>
+                <div class="col-sm-4">
+                    <h4><b>Resgate</b></h4>
+                    Em Bangladesh, o mercenário do mercado negro Tyler Rake luta para sobreviver durante a missão para
+                    resgatar o filho sequestrado de um chefe do crime internacional.
+                    <br>
+                    <br>
+                    <b><button type="button" class="btn btn-secondary"
+                            style="background-color: #262525; color: rgb(252, 185, 2);"></i>Hollywood</button></b>
+                    <b><button type="button" class="btn btn-secondary"
+                            style="background-color: #262525; color: rgb(252, 185, 2);"></i>Oscar</button></b>
+                    <b><button type="button" class="btn btn-secondary"
+                            style="background-color: #262525; color: rgb(252, 185, 2);"></i>Melhor Filme</button></b>
+
+                    <p style=" border-bottom: 1px solid #000000;">
+                        _______________________________________________________________________________ </p>
+                </div>
+                <div class="col-sm-2">
+
+                    <h1 style="padding-top: 10%;"><b>Editorial</b></h1>
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <h4><i class="fas fa-user"></i></h4>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4><b>Redação:</b> </h4>
+                        </div>
+                        <div class="col-sm-2">
+                            <h4>&nbsp;Vítor&nbsp;Lion</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <h4><i class="fas fa-user"></i></h4>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4><b>Pesquisa:</b> </h4>
+                        </div>
+                        <div class="col-sm-2">
+                            <h4>&nbsp;&nbsp;Vítor&nbsp;Lion</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2">
+                    <img class="img-responsive" src="imagens/SeteVidas.jpg" width="130" height="800" alt="Chania">
+                    <br>
+                </div>
+                <div class="col-sm-4">
+                    <h4><b>Sete vidas</b></h4>
+                    A vida secreta atormenta Ben Thomas. A fim de encontrar a redenção, ele se propõe a mudar a vida de
+                    sete pessoas desconhecidas. Ao longo de sua jornada, ele conhece e se apaixona por uma paciente
+                    cardíaca chamada Emily e, ao fazer isso, complica a sua missão.
+                    <br>
+                    <br>
+                    <b><button type="button" class="btn btn-secondary"
+                            style="background-color: #262525; color: rgb(252, 185, 2);"></i>Hollywood</button></b>
+                    <b><button type="button" class="btn btn-secondary"
+                            style="background-color: #262525; color: rgb(252, 185, 2);"></i>Oscar</button></b>
+                    <b><button type="button" class="btn btn-secondary"
+                            style="background-color: #262525; color: rgb(252, 185, 2);"></i>Melhor Filme</button></b>
+
+                    <p style=" border-bottom: 1px solid #000000;">
+                        _______________________________________________________________________________ </p>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <h4><i class="fas fa-user"></i></h4>
+                        </div>
+                        <div class="col-sm-5" style="mar">
+                            <h4><b>Gerente&nbsp;Geral:</b> </h4>
+                        </div>
+                        <div class="col-sm-2">
+                            <h4>Vítor&nbsp;Lion</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <h3 style="padding-left: 67.5%;"><b>Redes Sociais</b></h3>
+                <div class="row" style="padding-left: 67.5%;">
+                    <div class="col-sm-1">
+                        <h1><i class="fab fa-facebook-square"></i></h1>
+                    </div>
+
+                    <div class="col-sm-1">
+                        <h1><i class="fab fa-twitter"></i></h1>
+                    </div>
+                    <div class="col-sm-1">
+                        <h1><i class="fab fa-instagram"></i></h1>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <div class="main2" style="background-color: #b5b3b3;">
+                <div class="row">
+                    <br>
+                    <br>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-9">
+                        <h3 style="padding-left: 6%;"><b>Copyright 2021 - Disciplina de Desenvolvimento de interfaces
+                                WEB - <b>ICEI PUC Minas</b></b></h3>
+                        <br>
+                    </div>
+                    <div class="col-sm-2">
+                        <br>
+                        <li><a href="#main"><img src="imagens\logo.png" class="img-rounded" alt="Cinque Terre"></a></li>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <br>
+                    <li><a href="#main"><img src="imagens\logo.png" style="width: 70px; height: 40px"
+                                class="img-rounded" alt="Cinque Terre"></a></li>
+                </div>
+            </div>
+
+            <br>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="./ApiFilmes.js"></script>
+
+</body>
+
+</html>
